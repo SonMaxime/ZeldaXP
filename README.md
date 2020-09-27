@@ -8,6 +8,6 @@
     <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
   </a>
   <a href="https://twitter.com/SonMaxime667Bin" target="_blank">
-    <img alt="Twitter: winstonettv" src="https://img.shields.io/twitter/follow/SonMaxime667Binks.svg?style=social" />
+    <img alt="Twitter: SonMaxime667Bin" src="https://img.shields.io/twitter/follow/SonMaxime667Binks.svg?style=social" />
   </a>
 </p>
