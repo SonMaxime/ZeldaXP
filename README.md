@@ -11,3 +11,12 @@
     <img alt="Twitter: LeVraiSonMaxime" src="https://img.shields.io/twitter/follow/LeVraiSonMaxime.svg?style=social" />
   </a>
 </p>
+
+Bienvenue sur le wiki ZeldaXP !
+Ce bot créé avec Discord.JS constitue un système d'xp dans la base de données Mongo.DB.
+
+Comment fonctionne-t-il ? Simple comme bonjour !
+
+Pour la base de données, il vous suffit d'aller sur : https://account.mongodb.com/account/login 
+
+Et puis vous plus besoin de toucher à rien. C'est pas génial ça ? De plus si le préfix par défaut ne vous plait pas vous pouvez le changer.
