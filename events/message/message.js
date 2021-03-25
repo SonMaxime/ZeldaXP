@@ -13,6 +13,15 @@ module.exports = async (client, message,  messageReaction) => {
     username: message.member.user.tag,
   });
 
+  if (!message.guild.language) {
+    const db = client.db;
+    let language = db.has(`${message.guild.id}.language`) ? 
+      await db.fetch(`${message.guild.id}.language`) :
+      "fr";
+    
+    message.guild.language = require(`../../locales/${language}.json`);
+  }
+
   const expCd = Math.floor(Math.random() * 19) + 1; // 1 - 20
   const expToAdd = Math.floor(Math.random() * 25) + 10; // 10 - 35
 
