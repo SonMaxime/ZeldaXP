@@ -15,6 +15,6 @@ client.db = new Database("database/languageGuild.json");
 
 loadCommands(client);
 loadEvents(client);
-client.mongoose.init();
+client.mongoose.init()
 
 client.login(client.config.TOKEN);
