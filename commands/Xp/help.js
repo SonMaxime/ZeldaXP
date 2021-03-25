@@ -1,7 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const { Menu } = require('discord.js-menu');
 const { readdirSync } = require("fs");
-const { MESSAGES } = require("../../util/constants");
 const categoryList = readdirSync('./commands');
 
 module.exports.run = (client, message, args, settings) => {
@@ -59,4 +58,14 @@ module.exports.run = (client, message, args, settings) => {
   }
 };
 
-module.exports.help = MESSAGES.COMMANDS.XP.HELP;
+module.exports.help = {
+    name: "help",
+    aliases: ['help'],
+    category: 'xp',
+    description: "Renvoie une liste de commandes ou les informations sur une seule.",
+    cooldown: 3,
+    usage: '<command_name>',
+    isUserAdmin: false,
+    permissions: false,
+    args: true
+}

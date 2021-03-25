@@ -1,5 +1,3 @@
-const { MESSAGES } = require("../../util/constants");
-
 module.exports.run = async (client, message, args, settings) => {
   const getSetting = args[0];
   const newSetting = args.slice(1).join(" ");
@@ -16,4 +14,14 @@ module.exports.run = async (client, message, args, settings) => {
   }
 };
 
-module.exports.help = MESSAGES.COMMANDS.XP.CONFIG;
+module.exports.help = {
+  name: "config",
+  aliases: ['configdb'],
+  category: 'xp',
+  description: "Modifie le `prefix` de votre serveur.",
+  cooldown: 3,
+  usage: 'prefix <valeur>',
+  isUserAdmin: false,
+  permissions: true,
+  args: true
+}

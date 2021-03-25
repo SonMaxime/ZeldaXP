@@ -1,5 +1,3 @@
-const { MESSAGES } = require("../../util/constants");
-
 module.exports.run = async (client, message, args, settings, dbUser) => {
   const user = message.guild.member(message.mentions.users.first());
 
@@ -11,4 +9,14 @@ module.exports.run = async (client, message, args, settings, dbUser) => {
   }
 };
 
-module.exports.help = MESSAGES.COMMANDS.XP.EXP;
+module.exports.help = {
+  name: "exp",
+  aliases: ['exp'],
+  category: 'xp',
+  description: "Renvoie l'expérience de l'utilisateur.",
+  cooldown: 10,
+  usage: '',
+  isUserAdmin: false,
+  permissions: false,
+  args: false
+}
