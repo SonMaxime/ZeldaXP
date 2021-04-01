@@ -3,7 +3,7 @@ module.exports.run = (client, message, args) => {
   const expToAdd = parseInt(args[1]);
   if (isNaN(expToAdd)) return message.reply("faut entrer un nombre.");
   client.addExp(client, user, expToAdd);
-  message.channel.send(`Vous avez ajouté avec succès ${expToAdd} points d'expérience à l'utilisateur ${user}!`);
+  message.channel.send(message.guild.langauge.vousAvezAjoute + ` ${expToAdd}` + message.guild.langauge.pointsUser + `${user}!`);
 };
 
 module.exports.help = {

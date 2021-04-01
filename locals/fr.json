@@ -15,6 +15,7 @@
 	"alreadyCollector": "Un collecteur de messages est déjà actif dans ce salon.",
 	"needToTag": "il faut entrer un nombre ou un @tag si vous ne l'avez pas renseigné.",
 	"vousAvezAjoute": "Vous avez ajouté avec succès",
+    "xpInSave": "points d'expérience.",
 	"pointsUser": "points d'expérience à l'utilisateur ",
 	"userXPLevel": "points d'expérience - Niveau",
 	"top4OfUsers": "Top 4 des utilisateurs sur le serveur",
@@ -25,5 +26,6 @@
 	"needToTagSomeone": "il faut mentionner un utilisateur.",
 	"cantUseCommandOnUser": "tu ne peux pas utiliser cette commande sur cet utilisateur.",
 	"pleaseWait": "merci d'attendre",
+    "possède": "possède",
 	"pleaseWaitSeconds": "seconde(s) avant de ré-utiliser la commande"
 }

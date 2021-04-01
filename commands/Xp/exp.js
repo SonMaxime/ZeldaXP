@@ -3,9 +3,9 @@ module.exports.run = async (client, message, args, settings, dbUser) => {
 
   if (args[0]) {
     const mentionnedUser = await client.getUser(user);
-    message.channel.send(`${user} possède ${mentionnedUser.experience} points d'expérience!`);
+    message.channel.send(`${user}` + message.guild.language.possède + `${mentionnedUser.experience}` + message.guild.language.xpInSave);
   } else {
-    message.reply(`tu possèdes ${dbUser.experience} points d'expérience!`);
+    message.reply(message.guild.language.uHave + ` ${dbUser.experience} ` + message.guild.language.possède);
   }
 };
 

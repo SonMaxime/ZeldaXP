@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports.run = async (client, message, args) =>  {
     let lang = args[0];
 
-    if(!lang) return message.reply(mesage.guild.language.specify_language)
+    if(!lang) return message.reply(mesage.guild.language.specify_language);
 
     let languages = fs.readdirSync("./locals")
     .filter(file => file.endsWith('.json'))
